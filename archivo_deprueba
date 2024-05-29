@@ -12,3 +12,4 @@ with open('archivo_1.csv', 'r', newline='') as archivo_csv:
     lector_csv = csv.reader(archivo_csv)
     for fila in lector_csv:
         print(fila)
+        print(probando)

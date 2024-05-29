@@ -1,0 +1,14 @@
+import csv
+with open('archivo_1.csv', 'w', newline = '') as archivo_csv:
+    escritor_csv = csv.writer (archivo_csv)
+    escritor_csv.writerow(['Nombre', 'Edad', 'Comuna'])
+    escritor_csv.writerows([
+        ['Isaac',30, 'Valparaíso'],
+        ['Pablo', 40, 'Valdivia'],
+        ['Sergio', 50, 'Arica'],
+        ['Sofia', 20, 'Temuco']
+])
+with open('archivo_1.csv', 'r', newline='') as archivo_csv:
+    lector_csv = csv.reader(archivo_csv)
+    for fila in lector_csv:
+        print(fila)
